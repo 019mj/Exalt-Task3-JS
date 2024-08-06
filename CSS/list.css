@@ -1,0 +1,25 @@
+#grid-container{
+    display: flex;
+    flex: 1;
+    overflow: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 15px;
+    flex: 1;
+    height: 100%;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #dddddd;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}

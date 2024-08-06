@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <link rel="stylesheet" href="./CSS/list.css">
+    </head>
+<body>
+    <div class="main-containner">
+
+        <header>
+            <h1 id="main-title">Events</h1>
+            <button id="new-button">+New</button>
+        </header>
+    
+        <div class="container">
+            <nav>
+                <button id="list-link">List</button>
+                <button id="form-link">Form</button>
+            </nav>
+            <div id="grid-container">
+                <main id="main">
+
+                </main>
+            </div>
+
+            <div id="form-container" style="display: none;">
+                <section class="form-section">
+                        <label for="event-name">Name:</label>
+                        <input type="text" id="event-name">
+
+                        <label for="description">Description:</label>
+                        <textarea id="description"></textarea>
+
+                        <label for="date">Date:</label>
+                        <input type="date" id="date">
+                </section>
+
+                <section class="option-section">
+                    <button id="cancel-button">Cancel</button>
+                    <button id="add-button" disabled>Add</button>
+                </section>
+            </div>
+
+
+
+        </div>
+    
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./JS/index.js" type="module"></script>
+    <script src="./JS/list-script.js" type="module"></script>
+    <script src="./JS/form-script.js" type="module"></script>
+
+    
+</body>
+</html>
